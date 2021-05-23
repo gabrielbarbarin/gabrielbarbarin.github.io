@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Farro', sans-serif, 'Courier New', Courier, monospace;
+}
+
+section{
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-section{
+    font-size: 30px;
+    text-align: center;
+}
+
+.advertencia{
+    font-size: 25px;
+}
+
+.img-vid{
+    background-image: url("./img/osos-polares.jpg");
+    background-size: cover;
+    padding: 25%;
+    width: 30%;
+    width: auto;
+    text-align: center;
+    box-shadow: 1px 2px 2px rgb(53, 53, 53);
+}
+
+.img-vid > a > img{
+    width: 25%;
+}
+
+#modal-container{
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(114, 114, 114, 0.7);
+}
+
+#modal{
+    position: relative;
+    width: 90%;
+    height: 50%;
+    transition: 2s;
+    transform: translateY(-3%);
+}
+
+#modal > i{
+    display: block;
+    color: white;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.modal-close{
+    transform: translateY(-200%);
+}
